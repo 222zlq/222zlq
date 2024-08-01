@@ -4,8 +4,6 @@ from PIL import Image
 #from streamlit_drawable_canvas import st_canvas#可删
 #from PIL import Image#可删
 
-st(background_image = Image.open("宇宙.gif"))
-
 page = st.sidebar.radio('我的首页', ['我的兴趣推荐', '我的图片处理工具', '我的智能词典', '我的留言区', '我的古诗搜索', '我的跳转', '我的答题器'])
 
 def page_1():
