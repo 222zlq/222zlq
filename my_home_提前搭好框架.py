@@ -176,6 +176,18 @@ def page_7():
     cb = st.checkbox('勾选选项')
     if cb:
         st.write('选项被勾选', cb)
+    st.write('----')
+    st.write('这道题选什么？')
+    cb1 = st.checkbox('1 16*5=80')
+    cb2 = st.checkbox('2 4的算术平方根是2')
+    cb3 = st.checkbox('3 9的平方根是3')
+    cb4 = st.checkbox('4 1993没有相反数')
+    l = [cb1, cb2, cb3, cb4]
+    if st.button('确认答案'):
+        if cb1 == True and cb2 == True and cb3 == False and cb4 == False:
+            st.write('回答正确')
+        else:
+            st.write('回答错误')
     
 if page == '我的兴趣推荐':
     page_1()
